@@ -1,11 +1,11 @@
 import React from 'react'
-import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '@material-ui/core'
+import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography, } from '@material-ui/core'
 import {ShoppingCart} from '@material-ui/icons'
 
 import logo from '../../Assets/commerce.png'
 import useStyles from './styles'
 
-const Navbar = () => {
+const Navbar = ({totalItems}) => {
     const classes = useStyles()
 
     return (
@@ -19,7 +19,7 @@ const Navbar = () => {
                     <div className={classes.grow}/>
                     <div className={classes.button}>
                         <IconButton aria-label="Show cart items" color="inherit">
-                            <Badge bagdeContent={3} color="secondary">
+                            <Badge bagdeContent={totalItems} color="secondary">
                                 <ShoppingCart/>
                             </Badge>
                         </IconButton>
