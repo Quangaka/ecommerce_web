@@ -19,7 +19,7 @@ const Navbar = ({totalItems}) => {
                     <div className={classes.grow}/>
                     <div className={classes.button}>
                         <IconButton aria-label="Show cart items" color="inherit">
-                            <Badge bagdeContent={totalItems} color="secondary">
+                            <Badge bagdecontent={totalItems} color="secondary">
                                 <ShoppingCart/>
                             </Badge>
                         </IconButton>
