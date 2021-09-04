@@ -23,7 +23,7 @@ const Navbar = ({totalItems}) => {
                     {location.pathname === '/' && (
                         <div className={classes.button}>
                             <IconButton component={Link} to="/cart" aria-label="Show cart items" color="inherit">
-                                <Badge bagdecontent={totalItems} color="secondary">
+                                <Badge bagdeContent={totalItems} color="secondary">
                                     <ShoppingCart/>
                                 </Badge>
                             </IconButton>
